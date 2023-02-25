@@ -1,0 +1,216 @@
+:root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover:#BABABA;
+
+    --fonte-padrao: 'Inter', sans-serif;
+
+}
+
+
+/*MARGEM DA PAGINA */
+body{
+    margin: 0px; /*MARGEM EXTERNA*/
+    padding: 0px; /*MARGEM INTERNA*/    
+    
+   
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
+}
+
+/*Cabeçalho da pagina*/
+
+#home {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    border: 1px solid var(--preto-dnc);
+    background-color: var(--preto-dnc);
+    border-bottom: 1px solid #BABABA;
+    
+
+    font-family: var(--fonte-padrao);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+/*Nav dos menus de navegação */
+
+#home div a{
+    font-family: var(--fonte-padrao);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration-line: none;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+    #home div a:hover{
+        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+        filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+        color: var(--cinza-hover);
+    }
+
+/*Menu dos links*/
+
+#menu {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+/*BOTÂO DE LOGIN*/
+
+#home button {
+    margin-right:5% ;
+    background-color: var(--azul-dnc);
+    border: 0;
+    border-radius: 20px;
+    height: 60px;
+    width: 100px;
+    box-shadow: 4px 3px 5px rgba(12, 112, 242, 0.25);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+        #home button:hover{
+            -webkit-transform: scale(1.5);
+            transform: scale(1.2);
+        }
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+header{
+    color: white;
+    font-family: var(--fonte-padrao);
+
+    text-align: center;
+    
+
+}
+header h1{
+    font-size: 80px;
+    font-weight: 800;
+    text-transform:uppercase ;
+   
+    margin-bottom: 20px;
+   
+}
+
+header h2{
+    font-weight: 700;
+    font-size: 40px;    
+
+    margin-bottom: 100px;
+    
+
+}
+
+header .fundo {
+    background-color: black;
+    border-radius: 7px;
+    font-weight: bold;
+    padding: 2px;
+    
+}
+
+form{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-bottom: 13px;
+
+}
+
+input {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    height: 56px;
+    border: 0px;
+    font-size: 20px;
+    padding: 7px;
+}
+
+label{
+    margin: 10px 0px 10px 0px;
+
+}
+
+form input ::placeholder{
+    color: background rgba(57, 57, 57, 0.5);
+
+}
+
+.checkbox-itens label{
+    font-size: 25px;    
+}  
+
+.checkbox-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.8);
+
+}
+
+input[type="submit"] {
+    background: rgba(12, 112, 242, 0.9);
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 32px;
+    height: 600px;
+
+    width: 100%;
+    height: 56px;
+    margin-top: 67px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+        input[type="submit"]:hover{
+            -webkit-transform: scale(1.5);
+            transform: scale(1.2);
+        }
